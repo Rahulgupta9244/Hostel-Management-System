@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sadd.css">
+    </head>
+<body><div><h1 style="font-size: 40px; margin: 50px 0px 0px 580px; font-family: 'Poppins', sans-serif;">Add New Student Details</h1></div><div style="margin-top: 10px;margin-left: 600px"><form action="sinsert.php" method="post">
+    <br><br> <div>
+    
+    Student Id : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="border-radius: 10px;height: 40px;width: 300px;font-size: 20px" type="text" name="name1"><br><br>
+    Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<input type="text" name="name2" style="border-radius: 10px;height: 40px;width: 300px;font-size: 20px" pattern="[A-Za-z ]{1,}"><br><br>
+    Department :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<input type="text" name="name3" style="border-radius: 10px;height: 40px;width: 300px;font-size: 20px" pattern="[A-Za-z ]{1,}"><br><br>
+    DOB :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<input type="date" name="name4" style="border-radius: 10px;height: 40px;width: 300px;font-size: 20px"><br><br>
+    Address :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<input type="text" name="name5" style="border-radius: 10px;height: 40px;width: 300px;font-size: 20px"><br><br>
+    Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name6" style="border-radius: 10px;height: 40px;width: 300px;font-size: 20px" pattern="[0-9]{10}"><br><br>
+    Father's Name : &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name7" style="border-radius: 10px;height: 40px;width: 300px;font-size: 20px" pattern="[A-Za-z ]{1,}"><br><br>
+    Father's Phone : &nbsp;&nbsp;&nbsp;<input type="text" name="name8" style="border-radius: 10px;height: 40px;width: 300px;font-size: 20px"pattern="[0-9]{10}"><br><br>
+    Room Id : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name9" style="border-radius: 10px;height: 40px;width: 300px;font-size: 20px"><br><br>
+    Hostel Id : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name10" style="border-radius: 10px;height: 40px;width: 300px;font-size: 20px"><br><br>
+    </div><br><br>
+    <form action="sadd.html" class="details" style="margin-left: 40px"><div>
+    <button name="ok">SUBMIT</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="reset" name="reset">RESET</button></div>
+    </form>
+    </form>
+    </div>
+    <div>
+        <form action="admin.php" class="container2">
+            <a href="sadd.html"> <button id="b6" name="add" type="button">Add Student</button></a> <br><br>
+            <a href="radd.html"> <button id="b6" name="add" type="button">Add Room</button></a> <br><br>
+        <a href="vadd.html"> <button id="b6" name="add" type="button">Add Visitor</button></a> <br><br>
+        <a href="hadd.html"> <button id="b6" name="add" type="button">Add Hostel</button></a> <br><br>
+                <a href="fadd.html"> <button id="b6" name="add" type="button">Add Fee Details</button></a> <br><br>
+                <button id="b6" name="add" type="button" onclick="window.location.href='sdelete.php'">Delete Student</button> <br><br>
+        <button id="b6" name="add" type="button" onclick="window.location.href='rdelete.php'">Delete Room </button> <br><br>
+         <button id="b6" name="add" type="button" onclick="window.location.href='hdelete.php'">Delete Hostel</button> <br><br>
+        <button id="b6" name="add" type="button" onclick="window.location.href='vdelete.php'">Delete Visitor</button> <br><br>
+
+
+</form>
+        </div>
+    <div>
+        <form action="admin.php" class="container">
+   
+  <button type="button" id="b5" name="adminview" onclick="window.location.href='view_students.php'">View Students</button><br> <br>
+        <button type="button" id="b7" name="update2" onclick="window.location.href='view_visitor.php'">View Visitor Details</button><br><br>
+         <button type="button" id="b7" name="update3" onclick="window.location.href='view_mesh.php'">View Mess Details</button> <br><br>
+        <button type="button" id="b8" name="fee" onclick="window.location.href='view_fees.php'">View Fee Details</button><br><br>
+       <button id="b8" name="room" type="button" onclick="window.location.href='view_room.php'">View Room Details</button><br><br>
+                <button id="b8" name="vhd" type="button" onclick="window.location.href='view_hostel.php'">View Hostel Details</button><br><br>
+    <button id="b6" name="add" type="button" onclick="window.location.href='mupdate.php'">Update Mess Details</button> <br><br>
+    <button type="button" id="b7" name="update1" onclick="window.location.href='supdate.php'">Update Student Details</button> <br><br>
+<a href="hp.html"><button type="button">LogOut</button></a> <br> <br><p id="leftb"></p>
+
+   </form></div>
+    </body></html>
